@@ -1,0 +1,35 @@
+{
+  "experimento": "C_com_20_sinteticas",
+  "carater": "exploratorio",
+  "semente": 321,
+  "sha256_manifesto_original": "e7d8a5e99d74320cfeaa6afab226235ae58875faafee2e89813e3a1c198cec9b",
+  "classes": [
+    "def_k",
+    "def_n",
+    "def_p",
+    "fn"
+  ],
+  "epocas_maximas_inicial": 30,
+  "epocas_maximas_ajuste": 20,
+  "taxa_inicial": 0.001,
+  "taxa_ajuste": 2e-05,
+  "weight_decay_inicial": 0.0001,
+  "weight_decay_ajuste": 1e-05,
+  "expoente_pesos": 0.5,
+  "pesos_classes": {
+    "0": 0.8932423720372785,
+    "1": 0.9909634380915351,
+    "2": 0.9124540832966029,
+    "3": 2.187988028124629
+  },
+  "politica_pesos": "fixos, calculados sobre contagens do treino da base publica, iguais a C",
+  "dropout": 0.35,
+  "label_smoothing": 0.05,
+  "mixup": false,
+  "batch_size": 8,
+  "lotes_treino": 21,
+  "tensorflow": "2.17.1",
+  "criterio_selecao": "macro F1; desempate por perda sem smoothing",
+  "teste_avaliado": false,
+  "revisao_agronomica_sinteticas": "pendente"
+}

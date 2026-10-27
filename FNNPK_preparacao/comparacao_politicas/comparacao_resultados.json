@@ -1,0 +1,70 @@
+{
+  "tipo": "comparacao_descritiva_em_sequencia_simulada",
+  "sha256_entrada": "54c4a63d441726f5a6bdab8897e76c5d0300501a01915f9451f170d1e8c39195",
+  "numero_observacoes": 5,
+  "decisoes_reproduzidas_conferidas": true,
+  "baseline": "Um alerta para cada previsão válida de deficiência, sem memória ou supressão. Entrada inválida solicita captura em ambas as políticas.",
+  "politicas": {
+    "alerta_imediato": {
+      "acoes": {
+        "EMITIR_ALERTA": 4,
+        "SOLICITAR_NOVA_CAPTURA": 1
+      },
+      "primeiro_alerta_no_passo": 1
+    },
+    "agente_com_estado": {
+      "acoes": {
+        "SOLICITAR_NOVA_CAPTURA": 2,
+        "EMITIR_ALERTA": 1,
+        "REGISTRAR_OBSERVACAO": 1,
+        "ENCAMINHAR_REVISAO": 1
+      },
+      "primeiro_alerta_no_passo": 2
+    }
+  },
+  "por_observacao": [
+    {
+      "passo": 1,
+      "analise_id": "cenario_simulado_001",
+      "classe_prevista": "def_k",
+      "alerta_imediato": "EMITIR_ALERTA",
+      "agente_com_estado": "SOLICITAR_NOVA_CAPTURA"
+    },
+    {
+      "passo": 2,
+      "analise_id": "cenario_simulado_002",
+      "classe_prevista": "def_k",
+      "alerta_imediato": "EMITIR_ALERTA",
+      "agente_com_estado": "EMITIR_ALERTA"
+    },
+    {
+      "passo": 3,
+      "analise_id": "cenario_simulado_003",
+      "classe_prevista": "def_k",
+      "alerta_imediato": "EMITIR_ALERTA",
+      "agente_com_estado": "REGISTRAR_OBSERVACAO"
+    },
+    {
+      "passo": 4,
+      "analise_id": "cenario_simulado_004",
+      "classe_prevista": "def_n",
+      "alerta_imediato": "EMITIR_ALERTA",
+      "agente_com_estado": "ENCAMINHAR_REVISAO"
+    },
+    {
+      "passo": 5,
+      "analise_id": "cenario_simulado_005",
+      "classe_prevista": null,
+      "alerta_imediato": "SOLICITAR_NOVA_CAPTURA",
+      "agente_com_estado": "SOLICITAR_NOVA_CAPTURA"
+    }
+  ],
+  "limites": [
+    "Uma sequência fictícia com quatro imagens do conjunto de validação e um arquivo inválido.",
+    "Previsões fixas; nenhuma nova inferência ou treinamento.",
+    "Sem referência longitudinal agronômica; não mede falsos alertas, sensibilidade temporal ou benefício no cultivo.",
+    "Menos alertas pode incluir adiamento ou ausência de um alerta relevante.",
+    "Baseline não suprime repetições; não isola o benefício da confirmação do benefício da supressão.",
+    "Horários atribuídos não são tempos de captura de uma mesma planta; não usar como latência operacional."
+  ]
+}

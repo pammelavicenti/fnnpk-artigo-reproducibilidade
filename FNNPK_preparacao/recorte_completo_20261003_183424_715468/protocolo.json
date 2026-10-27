@@ -1,0 +1,24 @@
+{
+  "origem": "FNNPK_preparacao/divisao_agrupada",
+  "modo": "completo",
+  "modelo_segmentacao": "isnet-general-use",
+  "fundo_rgb": [
+    200,
+    200,
+    200
+  ],
+  "versoes": {
+    "rembg": "2.0.85",
+    "Pillow": "12.3.0",
+    "onnxruntime": "1.30.0",
+    "numpy": "2.4.6"
+  },
+  "script_sha256": "1366335e1c3979a2e9598251679e0d31e65f882e66d7da7d789f3eda54e36eec",
+  "particoes_preservadas": true,
+  "imagens_sinteticas_adicionadas": false,
+  "revisao_visual": "pendente",
+  "orientacao_exif": "aplicada",
+  "crop": false,
+  "redimensionamento": false,
+  "alpha_matting": false
+}

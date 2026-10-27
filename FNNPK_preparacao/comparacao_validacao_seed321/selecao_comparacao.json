@@ -1,0 +1,5 @@
+{
+  "melhor_novo_experimento": "C_ajuste_maior",
+  "criterio": "macro F1 na validação; desempate por perda",
+  "teste_avaliado": false
+}

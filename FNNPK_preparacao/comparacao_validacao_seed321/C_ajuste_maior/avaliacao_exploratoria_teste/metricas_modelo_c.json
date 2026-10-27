@@ -1,0 +1,158 @@
+{
+  "modelo": "C_ajuste_maior",
+  "natureza_avaliacao": "exploratoria_em_teste_previamente_consultado",
+  "classes": [
+    "def_k",
+    "def_n",
+    "def_p",
+    "fn"
+  ],
+  "sem_tta": {
+    "numero_imagens": 31,
+    "acertos": 27,
+    "acuracia": 0.8709677419354839,
+    "macro_precisao": 0.825,
+    "macro_recall": 0.8972222222222223,
+    "macro_f1": 0.8253734827264239,
+    "perda_sem_label_smoothing": 0.33535271883010864,
+    "matriz_confusao": [
+      [
+        8,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        8,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        9,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        2
+      ]
+    ],
+    "por_classe": {
+      "def_k": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1-score": 0.8888888888888888,
+        "support": 10.0
+      },
+      "def_n": {
+        "precision": 1.0,
+        "recall": 0.8888888888888888,
+        "f1-score": 0.9411764705882353,
+        "support": 9.0
+      },
+      "def_p": {
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1-score": 0.9,
+        "support": 10.0
+      },
+      "fn": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1-score": 0.5714285714285714,
+        "support": 2.0
+      },
+      "accuracy": 0.8709677419354839,
+      "macro avg": {
+        "precision": 0.825,
+        "recall": 0.8972222222222223,
+        "f1-score": 0.8253734827264239,
+        "support": 31.0
+      },
+      "weighted avg": {
+        "precision": 0.9290322580645162,
+        "recall": 0.8709677419354839,
+        "f1-score": 0.8871720731303274,
+        "support": 31.0
+      }
+    }
+  },
+  "com_tta": {
+    "numero_imagens": 31,
+    "acertos": 27,
+    "acuracia": 0.8709677419354839,
+    "macro_precisao": 0.825,
+    "macro_recall": 0.8972222222222223,
+    "macro_f1": 0.8253734827264239,
+    "perda_sem_label_smoothing": 0.33512645959854126,
+    "matriz_confusao": [
+      [
+        8,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        8,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        9,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        2
+      ]
+    ],
+    "por_classe": {
+      "def_k": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1-score": 0.8888888888888888,
+        "support": 10.0
+      },
+      "def_n": {
+        "precision": 1.0,
+        "recall": 0.8888888888888888,
+        "f1-score": 0.9411764705882353,
+        "support": 9.0
+      },
+      "def_p": {
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1-score": 0.9,
+        "support": 10.0
+      },
+      "fn": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1-score": 0.5714285714285714,
+        "support": 2.0
+      },
+      "accuracy": 0.8709677419354839,
+      "macro avg": {
+        "precision": 0.825,
+        "recall": 0.8972222222222223,
+        "f1-score": 0.8253734827264239,
+        "support": 31.0
+      },
+      "weighted avg": {
+        "precision": 0.9290322580645162,
+        "recall": 0.8709677419354839,
+        "f1-score": 0.8871720731303274,
+        "support": 31.0
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "modelo_path": "/CAMINHO/DO/SEU/modelo.keras",
+  "classes": ["def_k", "def_n", "def_p", "fn"],
+  "ordem_classes_confirmada": false,
+  "img_size": 224,
+  "min_dimensao": 32
+}

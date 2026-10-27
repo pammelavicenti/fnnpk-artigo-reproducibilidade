@@ -1,0 +1,39 @@
+# Dados e artefatos grandes
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.webp
+*.keras
+*.h5
+*.pt
+*.onnx
+*.zip
+
+# Estado operacional e segredos locais
+*.sqlite
+*.sqlite3
+*.db
+.env
+.env.*
+!.env.example
+
+# Python e ambientes
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Saídas reconstruíveis
+conferencia_visual/
+_carregamento_treino/
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

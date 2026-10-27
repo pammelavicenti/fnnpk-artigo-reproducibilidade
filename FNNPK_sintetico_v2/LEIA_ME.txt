@@ -1,0 +1,32 @@
+FNNPK SINTETICO V2 — PILOTO EXPLORATORIO
+
+20 novas imagens individuais: cinco por classe (def_k, def_n, def_p, fn).
+Lote separado do primeiro piloto. Nao inclui imagens do lote anterior.
+Imagens geradas por IA em 03/10/2026. Classes pretendidas, sem diagnostico confirmado.
+
+Mudancas solicitadas nos prompts:
+- fundo cinza claro liso para todas as classes, sem texturas e sem suportes;
+- variacoes equivalentes de angulo, tamanho e arranjo de folhas nas quatro classes;
+- sintomas menos saturados e distribuicao menos regular;
+- imagens individuais sem textos, marcas ou colagens.
+
+Essas instrucoes nao garantem validade agronomica, diversidade suficiente ou ausencia de pistas indevidas. Ainda e necessario revisar plausibilidade dos sintomas, anatomia, intensidade, formato das folhas e iluminacao. A aparencia de folhas roxas nao comprova deficiencia de fosforo; folhas verdes nao comprovam nutricao completa.
+
+Referencias: oito imagens que a usuaria informou ter baixado diretamente do Lettuce NPK Dataset, Kaggle, Baronn. O metodo de producao das referencias permanece desconhecido. A imagem do Designi nao foi utilizada. Os nomes das referencias e os prompts completos constam em manifesto.csv e geracao.json. Modelo exato do gerador e semente nao foram expostos pela ferramenta.
+
+Protocolo de uso:
+1. Manter este lote separado da base original e do primeiro piloto.
+2. Registrar revisao antes de uso cientifico como imagens de deficiencias nutricionais.
+3. Se executar antes da revisao, identificar o treinamento como exploratorio com rotulos pretendidos.
+4. Sinteticas somente no treino; referencias de geracao precisam pertencer exclusivamente ao treino.
+5. Comparar primeiro na validacao, com mesma configuracao e pesos de classe do modelo C original.
+6. O teste ja consultado nao se torna independente com um novo treinamento. Comparacoes nele continuam exploratorias.
+7. Nao escolher lotes ou configuracoes pelo maior resultado no teste.
+
+Treinamento no computador da usuaria (WSL, ambiente alface):
+Extrair este ZIP em FNNPK_sintetico_v2
+Na pasta FNNPK_preparacao, usar o script treinar_com_sinteticas.py corrigido para copyfile:
+python treinar_com_sinteticas.py --sinteticas "../FNNPK_sintetico_v2"
+O script aceita uma pasta intermediaria adicional criada pela extracao do ZIP.
+Esse comando usa 141 imagens do treino original + 20 deste novo lote, totalizando 161. Ele nao mistura os dois pilotos.
+Nenhum treinamento com V2 foi realizado pelo assistente.

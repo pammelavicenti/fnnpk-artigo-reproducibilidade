@@ -1,0 +1,11 @@
+{
+  "fase_escolhida": "ajuste",
+  "melhores_perdas_validacao": {
+    "inicial": 0.6496312022209167,
+    "ajuste": 0.6255419254302979
+  },
+  "epocas_executadas": [
+    14,
+    8
+  ]
+}

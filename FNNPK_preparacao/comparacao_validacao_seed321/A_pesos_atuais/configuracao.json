@@ -1,0 +1,36 @@
+{
+  "semente": 321,
+  "sha256_manifesto": "e7d8a5e99d74320cfeaa6afab226235ae58875faafee2e89813e3a1c198cec9b",
+  "classes": [
+    "def_k",
+    "def_n",
+    "def_p",
+    "fn"
+  ],
+  "batch_size": 8,
+  "epocas_maximas_inicial": 30,
+  "epocas_maximas_ajuste": 20,
+  "taxa_inicial": 0.001,
+  "taxa_ajuste": 2e-06,
+  "weight_decay_inicial": 0.0001,
+  "weight_decay_ajuste": 1e-05,
+  "expoente_pesos": 1.0,
+  "pesos_classes": {
+    "0": 0.734375,
+    "1": 0.9038461538461539,
+    "2": 0.7663043478260869,
+    "3": 4.40625
+  },
+  "dropout": 0.35,
+  "label_smoothing": 0.05,
+  "mixup": false,
+  "augmentation": {
+    "flip": "horizontal",
+    "rotation": 0.05,
+    "zoom": 0.1,
+    "contrast": 0.1,
+    "brightness": 0.05
+  },
+  "criterio_selecao": "macro F1; desempate por perda",
+  "tensorflow": "2.17.1"
+}

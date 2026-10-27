@@ -1,0 +1,49 @@
+{
+  "condicao": "C_V2",
+  "semente": 456,
+  "imagens_treino": 161,
+  "pesos_classes": {
+    "0": 0.8932423720372785,
+    "1": 0.9909634380915351,
+    "2": 0.9124540832966029,
+    "3": 2.187988028124629
+  },
+  "batch_size": 8,
+  "sementes": [
+    123,
+    321,
+    456
+  ],
+  "condicoes": [
+    "C_original",
+    "C_V2"
+  ],
+  "classes": [
+    "def_k",
+    "def_n",
+    "def_p",
+    "fn"
+  ],
+  "sha256_manifesto_original": "e7d8a5e99d74320cfeaa6afab226235ae58875faafee2e89813e3a1c198cec9b",
+  "sha256_manifesto_V2": "d73870d82f41e5e7c2949827d81b7b61c549591fcdf3303577f45d0b06ef8a7d",
+  "fontes_sha256": {
+    "comparar_sementes.py": "6240b059161d042776b619a3e0aecac0b8f7842e298315a8495ebf6610d3548d",
+    "comparar_treinamentos.py": "8622996faa64703ccb8daff2cbe83fb9b2c5b8bbc5eaed07841aad2fc881a5e7",
+    "treinar_alface.py": "2bade6860dcb08e67b70cebed98d9e7707561e8477ab2cfa2b6c26631ef505a2",
+    "treinar_com_sinteticas.py": "784e4cadaba64b063a0bf042a0d2d496fc5f68309e4ab26d4b739a8eeb745369"
+  },
+  "tensorflow": "2.17.1",
+  "semente_particionamento": 123,
+  "criterio_selecao": "maior macro F1 na validacao; desempate por menor perda sem smoothing",
+  "epocas_maximas_inicial": 30,
+  "epocas_maximas_ajuste": 20,
+  "taxa_inicial": 0.001,
+  "taxa_ajuste": 2e-05,
+  "weight_decay_inicial": 0.0001,
+  "weight_decay_ajuste": 1e-05,
+  "pesos": "mesmos nas duas condicoes, calculados sobre o treino da base publica; expoente 0.5",
+  "escopo_sementes": "inicializacao, RNG global do treinamento e camadas de augmentation/dropout",
+  "carregamento": "mesmo original.carregar; parametros internos de embaralhamento preservados",
+  "teste_avaliado": false,
+  "revisao_agronomica_sinteticas": "pendente"
+}

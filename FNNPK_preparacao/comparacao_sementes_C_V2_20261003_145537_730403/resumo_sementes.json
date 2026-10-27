@@ -1,0 +1,37 @@
+{
+  "C_original": {
+    "execucoes_concluidas": 3,
+    "acuracia_media": 0.956989247311828,
+    "acuracia_desvio_padrao_amostral": 0.01862420223192346,
+    "macro_f1_media": 0.9533973823447507,
+    "macro_f1_desvio_padrao_amostral": 0.03730830686868635,
+    "perda_sem_smoothing_media": 0.2444872905810674,
+    "perda_sem_smoothing_desvio_padrao_amostral": 0.038916747942513694
+  },
+  "C_V2": {
+    "execucoes_concluidas": 3,
+    "acuracia_media": 0.956989247311828,
+    "acuracia_desvio_padrao_amostral": 0.01862420223192346,
+    "macro_f1_media": 0.9533973823447507,
+    "macro_f1_desvio_padrao_amostral": 0.03730830686868635,
+    "perda_sem_smoothing_media": 0.23080259561538696,
+    "perda_sem_smoothing_desvio_padrao_amostral": 0.013612745564582682
+  },
+  "diferencas_pareadas": [
+    {
+      "semente": 123,
+      "diferenca_macro_f1_V2_menos_original": 0.0
+    },
+    {
+      "semente": 321,
+      "diferenca_macro_f1_V2_menos_original": 0.0
+    },
+    {
+      "semente": 456,
+      "diferenca_macro_f1_V2_menos_original": 0.0
+    }
+  ],
+  "diferenca_macro_f1_media": 0.0,
+  "carater": "exploratorio; validacao pequena e ja usada no desenvolvimento",
+  "teste_avaliado": false
+}

@@ -1,0 +1,5 @@
+Pillow>=10,<13
+numpy>=1.26,<3
+redis>=5,<8
+# Use o TensorFlow do ambiente em que o modelo foi treinado (artigo: 2.17.1).
+# Não é necessário instalar TensorFlow para os testes ou a simulação.

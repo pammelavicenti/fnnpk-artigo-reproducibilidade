@@ -1,0 +1,7 @@
+{
+  "modelo_path": "../comparacao_validacao_seed321/C_ajuste_maior/modelo_selecionado.keras",
+  "classes": ["def_k", "def_n", "def_p", "fn"],
+  "ordem_classes_confirmada": true,
+  "img_size": 224,
+  "min_dimensao": 32
+}

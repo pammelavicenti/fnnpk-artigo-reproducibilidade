@@ -1,0 +1,13 @@
+FNNPK SINTETICO — PILOTO PARA REVISAO
+20 imagens individuais: 5 def_k, 5 def_n, 5 def_p, 5 fn.
+Geradas por IA em 03/10/2026. Rotulos sao classes pretendidas, nao diagnosticos confirmados.
+As oito referencias foram informadas pela usuaria como provenientes do Lettuce NPK Dataset, Kaggle, Baronn. A forma de producao dessas referencias nao foi confirmada. A imagem do Designi nao foi utilizada.
+Prompts completos e nomes das referencias estao em geracao.json e manifesto.csv. Versao exata do gerador e semente nao foram expostas pela ferramenta.
+
+REVISAO NECESSARIA ANTES DE TREINAR
+O fundo de def_p ficou mais texturizado; algumas imagens def_k mostram suporte escuro. Morfologia e intensidade dos sintomas tambem diferem entre classes. Essas pistas podem enviesar o treinamento. Este piloto nao esta validado nem pronto para mistura automatica na base.
+Solicitar revisao agronomica das caracteristicas pretendidas, corrigir ou excluir imagens inadequadas e revisar fundos, morfologia e diversidade. Nao assumir que folhas roxas comprovam deficiencia de fosforo ou que folhas verdes comprovam nutricao completa.
+Usar imagens aprovadas somente no treinamento, mantendo suas referencias na mesma particao. Confirmar no manifesto original que as referencias pertencem ao treino antes do uso.
+Preservar validacao e teste sem imagens sinteticas. Nao apresentar estas imagens como fotografias de plantas cultivadas ou novas observacoes biologicas.
+O teste anterior foi consultado durante o desenvolvimento; novas comparacoes nele continuam exploratorias.
+Nao foi realizado treinamento com este piloto e nao ha evidencia de ganho de desempenho.

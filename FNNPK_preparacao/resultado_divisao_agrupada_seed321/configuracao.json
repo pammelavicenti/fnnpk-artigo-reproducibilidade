@@ -1,0 +1,50 @@
+{
+  "semente_treinamento": 321,
+  "sha256_manifesto": "e7d8a5e99d74320cfeaa6afab226235ae58875faafee2e89813e3a1c198cec9b",
+  "classes": [
+    "def_k",
+    "def_n",
+    "def_p",
+    "fn"
+  ],
+  "tamanho_imagem": 224,
+  "batch_size": 8,
+  "modelo": "EfficientNetB0",
+  "pesos_iniciais": "ImageNet",
+  "dropout": 0.35,
+  "mixup": false,
+  "label_smoothing_ambas_fases": 0.05,
+  "pesos_classes": {
+    "0": 0.734375,
+    "1": 0.9038461538461539,
+    "2": 0.7663043478260869,
+    "3": 4.40625
+  },
+  "contagens_treino": {
+    "def_k": 48,
+    "def_n": 39,
+    "def_p": 46,
+    "fn": 8
+  },
+  "fase_inicial": {
+    "epocas_maximas": 14,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "early_stopping_patience": 4,
+    "reduce_lr_patience": 2
+  },
+  "ajuste_fino": {
+    "epocas_maximas": 10,
+    "primeiras_camadas_congeladas": 210,
+    "learning_rate": 2e-06,
+    "weight_decay": 1e-05,
+    "early_stopping_patience": 3,
+    "reduce_lr_patience": 1
+  },
+  "criterio_selecao": "menor val_loss entre as duas fases",
+  "python": "3.11.17",
+  "tensorflow": "2.17.1",
+  "keras": "3.15.1",
+  "numpy": "1.26.4",
+  "scikit_learn": "1.9.1"
+}
