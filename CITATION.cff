@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Se você usar este software, cite-o usando os metadados abaixo."
+title: "Agente de visão com memória para acompanhamento nutricional de alface"
+type: software
+authors:
+  - family-names: "Vicenti"
+    given-names: "Pammela"
+repository-code: "https://github.com/pammelavicenti/fnnpk-artigo-reproducibilidade"
+url: "https://github.com/pammelavicenti/fnnpk-artigo-reproducibilidade"
+license: MIT
+version: 1.0.0
+date-released: 2026-10-27
+keywords:
+  - computer vision
+  - lettuce
+  - nutrient deficiency
+  - reproducible research
+  - TensorFlow
+abstract: >-
+  Código, configurações, manifestos e resultados pequenos de apoio a um estudo
+  sobre classificação visual de possíveis deficiências de N, P e K em alface e
+  uma política de decisão com estado persistente.

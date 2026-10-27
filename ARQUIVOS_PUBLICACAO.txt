@@ -3,6 +3,7 @@ Arquivos preparados para publicação:
 .env.example
 .gitignore
 ARQUIVOS_PUBLICACAO.txt
+CITATION.cff
 FNNPK_preparacao/C_sinteticas_seed321_20261003_141443_299491/auditoria_dados.json
 FNNPK_preparacao/C_sinteticas_seed321_20261003_141443_299491/avaliacao_exploratoria_teste_20261003_142503_512736/matriz_confusao_com_tta.csv
 FNNPK_preparacao/C_sinteticas_seed321_20261003_141443_299491/avaliacao_exploratoria_teste_20261003_142503_512736/matriz_confusao_sem_tta.csv
@@ -148,6 +149,7 @@ FNNPK_sintetico_v2/LEIA_ME.txt
 FNNPK_sintetico_v2/geracao.json
 FNNPK_sintetico_v2/manifesto.csv
 INVENTARIO_ARTEFATOS.csv
+LICENSE
 PENDENCIAS_REPRODUCAO.md
 README.md
 VERIFICACAO.md

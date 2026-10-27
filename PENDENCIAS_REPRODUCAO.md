@@ -48,4 +48,7 @@
 
 ## Licenciamento
 
-Não havia licença no material encontrado e nenhuma foi escolhida nesta preparação. A publicação deve aguardar decisão dos autores e verificação dos direitos de terceiros.
+O código original deste repositório está sob a licença MIT. Essa licença não se
+estende automaticamente ao dataset, às imagens, aos pesos ImageNet, aos modelos
+ou a outros materiais de terceiros. A documentação da origem e dos respectivos
+termos de uso e redistribuição permanece pendente.

@@ -90,9 +90,18 @@ python comparar_politicas.py
 - **Simulação funcional do agente:** JSONL em `agente_visao_v1/`; verificam decisões, persistência e recuperação, não acurácia nutricional.
 - **Comparação descritiva simulada:** `comparacao_politicas/comparacao_resultados.json`; não é experimento de campo.
 
+## Citação
+
+Os metadados de citação estão em `CITATION.cff`. Ao usar este software, cite a
+versão arquivada correspondente. O DOI será acrescentado após o depósito de uma
+release em um repositório de preservação, como o Zenodo.
+
 ## Limitações e licença
 
 Não foram encontrados notebooks, scripts de Monte Carlo, análises de sensibilidade ou cálculo de intervalos. Dataset, modelos e parte das entradas necessárias à reprodução completa também não estão no repositório. Veja `PENDENCIAS_REPRODUCAO.md`.
 
-Nenhuma licença foi escolhida. Antes da publicação ou reutilização, os autores devem definir a licença do código e verificar direitos sobre dataset, imagens sintéticas, pesos ImageNet e demais materiais de terceiros.
+O código original deste repositório é distribuído sob a licença MIT; consulte
+`LICENSE`. Essa licença não concede direitos sobre o dataset original, imagens,
+pesos ImageNet, modelos ou outros materiais de terceiros. Confirme separadamente
+os termos aplicáveis antes de obter, redistribuir ou reutilizar esses materiais.
 
