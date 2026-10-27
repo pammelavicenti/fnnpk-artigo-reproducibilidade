@@ -1,9 +1,17 @@
 Arquivos preparados para publicação:
 
 .env.example
+.github/workflows/verificacao.yml
 .gitignore
 docs/ARQUIVOS_PUBLICACAO.txt
 CITATION.cff
+docs/DIAGNOSTICO_INICIAL.md
+docs/HISTORICO_MELHORIAS.md
+docs/INSTALACAO.md
+docs/METODOLOGIA.md
+docs/RASTREABILIDADE.md
+docs/RELATORIO_FINAL.md
+docs/REPRODUCAO.md
 FNNPK_preparacao/C_sinteticas_seed321_20261003_141443_299491/auditoria_dados.json
 FNNPK_preparacao/C_sinteticas_seed321_20261003_141443_299491/avaliacao_exploratoria_teste_20261003_142503_512736/matriz_confusao_com_tta.csv
 FNNPK_preparacao/C_sinteticas_seed321_20261003_141443_299491/avaliacao_exploratoria_teste_20261003_142503_512736/matriz_confusao_sem_tta.csv
@@ -152,7 +160,10 @@ docs/INVENTARIO_ARTEFATOS.csv
 LICENSE
 docs/PENDENCIAS_REPRODUCAO.md
 README.md
+requirements/recorte-historico.txt
+requirements/treinamento-historico.txt
 docs/VERIFICACAO.md
 scripts/conferir_imagens.py
 scripts/dividir_base.py
 scripts/preparar_base.py
+scripts/verificar_reproducibilidade.py

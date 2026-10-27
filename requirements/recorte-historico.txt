@@ -1,0 +1,6 @@
+# Versões registradas nos protocolos de recorte.
+# Use ambiente separado do treinamento: a versão de NumPy é diferente.
+rembg==2.0.85
+Pillow==12.3.0
+onnxruntime==1.30.0
+numpy==2.4.6

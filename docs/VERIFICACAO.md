@@ -1,5 +1,9 @@
 # Relatório de verificação local
 
+> **Registro histórico:** este documento descreve a preparação inicial da cópia
+> pública. Para as verificações executadas após a reestruturação didática,
+> consulte [`RELATORIO_FINAL.md`](RELATORIO_FINAL.md).
+
 Data da preparação: 27 de outubro de 2026.
 
 ## Inventário da origem
