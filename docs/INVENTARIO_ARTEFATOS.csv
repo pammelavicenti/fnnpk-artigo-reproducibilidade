@@ -9,7 +9,7 @@
 "docs/INSTALACAO.md","4222","documentacao","Guia de ambientes e instalação por atividade.","criado_reestruturacao","nenhum"
 "docs/METODOLOGIA.md","6922","documentacao","Descrição metodológica e diagramas da arquitetura existente.","criado_reestruturacao","nenhum"
 "docs/RASTREABILIDADE.md","6464","documentacao","Matriz entre afirmações, evidências e limitações.","criado_reestruturacao","nenhum"
-"docs/RELATORIO_FINAL.md","5523","documentacao","Relatório da reestruturação e auditoria final.","criado_reestruturacao","nenhum"
+"docs/RELATORIO_FINAL.md","5574","documentacao","Relatório da reestruturação e auditoria final.","criado_reestruturacao","nenhum"
 "docs/REPRODUCAO.md","4775","documentacao","Roteiro progressivo de reprodução em três níveis.","criado_reestruturacao","nenhum"
 "scripts/conferir_imagens.py","2019","codigo","Conferência visual das imagens.","material_encontrado","caminho_local_parametrizado"
 "scripts/dividir_base.py","7044","codigo","Divisão agrupada e geração de manifesto.","material_encontrado","caminho_local_parametrizado"

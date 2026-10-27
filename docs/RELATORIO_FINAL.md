@@ -103,6 +103,7 @@ em diretórios temporários.
 
 1. revisar esta branch por pull request e confirmar a renderização dos diagramas;
 2. publicar a CI e conferir sua primeira execução no GitHub;
-3. criar a release somente após essa revisão;
+3. criar a release `v1.1.0` somente após essa revisão, preservando a tag
+   histórica `v1.0.0`;
 4. acrescentar DOI ao `CITATION.cff` apenas depois do depósito real;
 5. planejar um conjunto final independente e um protocolo longitudinal por planta.
