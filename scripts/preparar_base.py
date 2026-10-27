@@ -5,7 +5,7 @@ import hashlib
 import os
 import shutil
 
-RAIZ = Path(__file__).resolve().parent
+RAIZ = Path(__file__).resolve().parent.parent
 ORIGEM = Path(os.environ.get("FNNPK_ORIGEM", RAIZ / "FNNPK"))
 DESTINO = Path(
     os.environ.get("FNNPK_PREPARACAO", RAIZ / "FNNPK_preparacao")

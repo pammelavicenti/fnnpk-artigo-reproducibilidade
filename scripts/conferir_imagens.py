@@ -6,7 +6,8 @@ import os
 
 BASE = Path(
     os.environ.get(
-        "FNNPK_PREPARACAO", Path(__file__).resolve().parent / "FNNPK_preparacao"
+        "FNNPK_PREPARACAO",
+        Path(__file__).resolve().parent.parent / "FNNPK_preparacao",
     )
 )
 

@@ -36,7 +36,9 @@
 ## Ajustes feitos somente na cópia
 
 - Caminhos absolutos com o nome do usuário foram convertidos em caminhos relativos nos arquivos textuais.
-- `preparar_base.py`, `conferir_imagens.py`, `dividir_base.py` e as cópias de `treinar_alface.py` aceitam variáveis de ambiente para os diretórios locais.
+- `scripts/preparar_base.py`, `scripts/conferir_imagens.py`,
+  `scripts/dividir_base.py` e as cópias de `treinar_alface.py` aceitam variáveis
+  de ambiente para os diretórios locais.
 - Foram adicionados `.gitignore`, `.env.example`, documentação e inventário. Resultados numéricos e hiperparâmetros não foram recalculados nem alterados.
 
 ## Riscos de interpretação
