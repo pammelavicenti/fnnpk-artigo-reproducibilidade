@@ -46,6 +46,14 @@
 - Os agrupamentos visuais registrados são provisórios; não equivalem a agrupamento comprovado por planta.
 - O conjunto denominado teste aparece em consultas anteriores e deve ser descrito como exploratório.
 - A comparação de políticas usa uma sequência fictícia e previsões fixas. A contagem menor de alertas não demonstra desempenho agronômico em cultivo real.
+- O hash de entrada preservado em `comparacao_resultados.json` antecede a
+  sanitização da cópia pública de `entrada_cenario.jsonl`. A reexecução confirma
+  as mesmas decisões e os demais campos, mas o hash histórico não é o hash da
+  cópia publicada; consulte `RASTREABILIDADE.md`.
+- O treinamento principal exige GPU na implementação atual; as avaliações
+  dependentes de modelos não foram executadas nesta preparação.
+- Os ambientes de treino e recorte registram versões diferentes de NumPy e não
+  devem ser instalados como um único ambiente universal.
 - Os pesos ImageNet são um material externo; sua obtenção pode exigir rede e deve respeitar os termos aplicáveis.
 
 ## Licenciamento
