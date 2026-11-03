@@ -3,14 +3,15 @@
 ## Materiais encontrados
 
 - Scripts Python de preparação, divisão, treinamento, avaliação e comparação de sementes.
-- Código do agente com estado persistente em SQLite e publicação opcional em Redis.
+- Código do agente principal Python com estado persistente em SQLite e publicação opcional em Redis.
+- [Suplemento de Monte Carlo](../suplemento_monte_carlo/LEIA-ME.md): scripts, resultados, análises de sensibilidade, intervalos de confiança e referência JavaScript de verificação.
 - Testes `unittest`, cenários JSON/JSONL e resultados funcionais registrados.
 - Configurações, históricos CSV, matrizes, probabilidades NPZ e resumos JSON.
 - `manifesto.csv`, `copias_identicas.csv`, `divisao_agrupada/manifesto_divisao.csv` e manifestos de recorte/sintéticas.
 
 ## Materiais apenas mencionados ou esperados
 
-- Dataset público original e sua referência/URL/licença.
+- Dataset completo e identificação da versão exata utilizada historicamente; a fonte de download e a licença declarada estão identificadas abaixo.
 - Modelos `.keras` referenciados pelas configurações e pelo agente.
 - Servidor Redis para o caminho de publicação real.
 - Revisão agronômica das imagens sintéticas, indicada como pendente nos resultados.
@@ -18,12 +19,11 @@
 ## Materiais ausentes
 
 - Notebooks.
-- Scripts e resultados de Monte Carlo.
-- Análises de sensibilidade e cálculo de intervalos de confiança.
 - Evidência de identificação por planta ou sequência de captura que permita confirmar independência biológica entre treino, validação e teste.
 - Arquivo de ambiente completo com todas as versões para cada experimento; Matplotlib não tem versão registrada.
 - Avaliação independente final em dados não consultados durante o desenvolvimento.
-- Documentação verificável da fonte e dos termos de redistribuição do dataset.
+- Comprovação independente da procedência biológica das imagens e da validade dos rótulos.
+- Comparação direta da política da simulação com o agente principal Python; os testes publicados comparam a simulação com a referência JavaScript.
 
 ## Itens deliberadamente excluídos
 
@@ -60,5 +60,11 @@
 
 O código original deste repositório está sob a licença MIT. Essa licença não se
 estende automaticamente ao dataset, às imagens, aos pesos ImageNet, aos modelos
-ou a outros materiais de terceiros. A documentação da origem e dos respectivos
-termos de uso e redistribuição permanece pendente.
+ou a outros materiais de terceiros. A fonte de download informada do dataset é
+[Baronn — Lettuce NPK Dataset](https://www.kaggle.com/datasets/baronn/lettuce-npk-dataset);
+a plataforma declara **CC0: Public Domain**, conforme a
+[consulta registrada no suplemento](../suplemento_monte_carlo/conferencia/VERIFICACAO.md).
+Isso não comprova a procedência biológica das imagens nem a validade dos rótulos.
+Marcas coloridas não comprovam isoladamente origem sintética. A identificação da
+versão histórica e a comprovação independente dessas questões permanecem pendentes.
+A declaração da plataforma não altera a licença ou as atribuições dos demais materiais.

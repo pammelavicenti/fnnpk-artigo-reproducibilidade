@@ -92,6 +92,7 @@ O fluxo real, as regras de estado e as etapas experimentais são detalhados no
 | `FNNPK_preparacao/comparacao_sementes_C_V2_*/` | comparação de três sementes em duas condições |
 | `FNNPK_preparacao/C_sinteticas_*/` | experimentos com imagens sintéticas |
 | `FNNPK_sintetico_piloto/`, `FNNPK_sintetico_v2/` | metadados dos lotes sintéticos |
+| `suplemento_monte_carlo/` | simulações, referência JavaScript de verificação e evidências publicadas |
 | `docs/` | instalação, reprodução, método, auditoria e inventários |
 | `requirements/` | versões históricas por ambiente; não são um ambiente universal |
 
@@ -128,8 +129,14 @@ modelo Keras nem conectam a Redis real.
 
 ## Preparação dos dados
 
-O dataset original não está neste repositório. Sua URL, versão e licença exatas
-não foram encontradas nos materiais. Se você tiver uma cópia obtida legalmente,
+O dataset completo não está neste repositório. A fonte de download informada é
+[Baronn — Lettuce NPK Dataset](https://www.kaggle.com/datasets/baronn/lettuce-npk-dataset),
+cuja plataforma declara **CC0: Public Domain**. Isso não comprova a procedência
+biológica das imagens nem a validade dos rótulos, que continuam sem comprovação
+independente. A versão exata usada historicamente ainda precisa ser identificada.
+Marcas coloridas não comprovam isoladamente origem sintética. Consulte os
+[detalhes no suplemento](suplemento_monte_carlo/LEIA-ME.md#imagens-fonte-e-direitos).
+Com uma cópia da base,
 organize as classes originais como `-K`, `-N`, `-P` e `FN`, configure os caminhos
 e execute:
 
@@ -156,7 +163,23 @@ disponível, não os pesos históricos exatos. As avaliações em pastas chamada
 `avaliacao_teste` e `avaliacao_exploratoria_teste*` são exploratórias porque o
 mesmo conjunto de 31 imagens foi consultado durante o desenvolvimento.
 
-## Agente inteligente
+## Agente principal e implementação de referência
+
+Há **um único agente principal do projeto**, implementado em Python:
+[`agente_visao.py`](FNNPK_preparacao/agente_visao_v1/agente_visao.py).
+Ele integra percepção visual pelo modelo Keras, memória persistente em SQLite,
+decisão informacional e publicação opcional no Redis. Consulte o
+[guia do agente Python](FNNPK_preparacao/agente_visao_v1/LEIA_ME.md).
+A continuidade do desenvolvimento e a integração com a hidroponia devem usar
+esse agente Python; a implementação atual não aciona bombas ou dosadores.
+
+A [implementação de referência JavaScript](suplemento_monte_carlo/agente_referencia/agente.js)
+é material de verificação das regras da simulação. Recebe previsões prontas,
+não executa a rede neural e não conecta a um servidor Redis. Consulte o
+[guia do suplemento](suplemento_monte_carlo/LEIA-ME.md).
+Essas implementações **não são dois agentes operacionais trabalhando juntos**.
+Os testes publicados comparam a política da simulação com a referência JavaScript;
+a comparação direta com o agente Python ainda não foi realizada neste trabalho.
 
 O agente usa SQLite para manter estado por `planta_id`. A primeira suspeita pede
 outra captura. Uma segunda captura com bytes diferentes, mesma classe e mesma
@@ -203,9 +226,12 @@ Cada número citado na documentação aponta para uma fonte na
 | 2 | preparação, divisão e procedimento de treino | dataset com direitos confirmados e GPU para o treino atual |
 | 3 | avaliação/inferência histórica | dataset na divisão exata e modelos `.keras` correspondentes |
 
-Não há avaliação independente final, identificação comprovada por planta,
-Monte Carlo, análise de sensibilidade ou intervalos de confiança preservados.
-Também falta revisão agronômica concluída das imagens sintéticas. Veja
+Há scripts e resultados de Monte Carlo, análises de sensibilidade e intervalos
+de confiança no [suplemento](suplemento_monte_carlo/LEIA-ME.md), com
+[verificações publicadas](suplemento_monte_carlo/conferencia/VERIFICACAO.md).
+Essas simulações não tornam independente a avaliação exploratória de 31 imagens.
+Continuam ausentes a avaliação independente final, a identificação comprovada por
+planta e a revisão agronômica concluída das imagens sintéticas. Veja
 [Pendências](docs/PENDENCIAS_REPRODUCAO.md).
 
 ## Licença e citação

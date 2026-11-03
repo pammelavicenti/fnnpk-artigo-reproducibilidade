@@ -66,11 +66,15 @@ simulação funcional, não uma taxa de falsos positivos.
 ### Materiais necessários
 
 - quatro diretórios de classe: `-K`, `-N`, `-P` e `FN`;
-- confirmação externa da fonte, versão e licença do dataset;
+- identificação da versão exata utilizada e conferência dos hashes nos manifestos;
 - espaço para a cópia preparada.
 
-A URL e os termos exatos do dataset não foram encontrados. Não use o repositório
-como prova de autorização para obtê-lo ou redistribuí-lo.
+A fonte de download informada é [Baronn — Lettuce NPK Dataset](https://www.kaggle.com/datasets/baronn/lettuce-npk-dataset).
+A plataforma declara **CC0: Public Domain**, conforme a
+[verificação publicada](../suplemento_monte_carlo/conferencia/VERIFICACAO.md).
+Essa declaração não comprova a procedência biológica das imagens ou a validade
+dos rótulos; ambas continuam sem comprovação independente. A versão histórica
+exata ainda precisa ser identificada.
 
 Defina os caminhos e execute:
 
@@ -123,12 +127,19 @@ python agente_visao.py --banco agente_real.sqlite analisar `
 Sucesso técnico significa que o modelo foi carregado, a imagem foi processada e
 uma decisão foi persistida. Não significa diagnóstico nutricional confirmado.
 
+## Suplemento de Monte Carlo
+
+Os scripts, resultados, análises de sensibilidade e intervalos de confiança estão
+publicados no [guia do suplemento](../suplemento_monte_carlo/LEIA-ME.md), que descreve
+os comandos e a verificação já realizada. Essa rota usa Node.js e é separada do
+verificador Python central. A equivalência publicada compara a política da simulação
+com a referência JavaScript; não compara diretamente com o agente principal Python.
+
 ## O que não é reproduzível integralmente
 
-- identificação exata e licença do dataset;
+- identificação da versão exata do dataset histórico e comprovação independente da procedência das imagens e dos rótulos;
 - modelos `.keras` históricos;
 - independência biológica das partições;
 - avaliação final em dados nunca consultados;
-- Monte Carlo, sensibilidade e intervalos de confiança mencionados, pois os
-  respectivos materiais não foram encontrados;
+- equivalência completa entre a simulação e o agente principal Python, cuja comparação direta ainda não foi realizada;
 - validação longitudinal e agronômica da política do agente.

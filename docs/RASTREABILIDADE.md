@@ -6,7 +6,7 @@ simulação com validação agronômica.
 
 | Afirmação ou experimento | Classificação | Arquivo de origem | Evidência disponível | Como verificar | Limitação |
 | --- | --- | --- | --- | --- | --- |
-| Base preparada com 203 imagens (`def_k`: 68, `def_n`: 57, `def_p`: 66, `fn`: 12) | Preparação | `FNNPK_preparacao/manifesto.csv` | nomes, classes e SHA-256 | contar linhas e classes | dataset, fonte e licença não distribuídos/comprovados |
+| Base preparada com 203 imagens (`def_k`: 68, `def_n`: 57, `def_p`: 66, `fn`: 12) | Preparação | `FNNPK_preparacao/manifesto.csv` | nomes, classes e SHA-256 | contar linhas e classes | dataset completo não distribuído; fonte de download identificada e CC0 declarada pela plataforma; procedência biológica e rótulos sem comprovação independente |
 | Cinco cópias exatas identificadas | Preparação | `FNNPK_preparacao/copias_identicas.csv` | pares mantido/removido e hashes | comparar SHA-256 registrados | não detecta imagens diferentes da mesma planta |
 | Divisão com 141 imagens de treino, 31 de validação e 31 de teste | Preparação | `FNNPK_preparacao/divisao_agrupada/manifesto_divisao.csv` | partição, classe, grupo e hash | contar por `particao` e `classe` | grupos visuais não provam independência biológica |
 | Treinamento EfficientNetB0, semente 321 | Treinamento | `FNNPK_preparacao/resultado_divisao_agrupada_seed321/configuracao.json`, `historico_*.csv` | hiperparâmetros, versões e curvas | inspecionar configuração e históricos | dados, pesos e modelo ausentes |
@@ -46,4 +46,15 @@ atenção. O hash histórico foi preservado para não reescrever evidência.
 5. Menos alertas na simulação não significa menos falsos positivos.
 6. Acurácia visual do classificador não é acurácia agronômica do sistema.
 7. TTA e múltiplas consultas são análises exploratórias, não estimativas finais.
-8. Não foram encontrados Monte Carlo, sensibilidade ou intervalos de confiança.
+8. Monte Carlo, sensibilidade e intervalos de confiança estão publicados no
+   [suplemento](../suplemento_monte_carlo/LEIA-ME.md), com
+   [registro de verificação](../suplemento_monte_carlo/conferencia/VERIFICACAO.md).
+   A equivalência publicada compara a simulação com a referência JavaScript;
+   não comprova equivalência completa com o agente principal Python. A comparação
+   direta com o Python ainda não foi realizada. As simulações não tornam a matriz
+   exploratória de 31 imagens uma avaliação independente.
+
+A fonte de download informada da base é [Baronn — Lettuce NPK Dataset](https://www.kaggle.com/datasets/baronn/lettuce-npk-dataset);
+a plataforma declara **CC0: Public Domain**. Essa declaração não comprova a
+procedência biológica das imagens ou a validade dos rótulos. Marcas coloridas não
+comprovam isoladamente origem sintética.

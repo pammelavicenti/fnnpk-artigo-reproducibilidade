@@ -1,5 +1,13 @@
 # Diagnóstico inicial do repositório
 
+> **Nota contextual — 03/11/2026:** este registro histórico antecede a publicação
+> do [suplemento de Monte Carlo](../suplemento_monte_carlo/LEIA-ME.md), que agora
+> contém scripts, resultados, sensibilidades e intervalos de confiança. A fonte de
+> download informada é [Baronn — Lettuce NPK Dataset](https://www.kaggle.com/datasets/baronn/lettuce-npk-dataset);
+> a plataforma declara CC0. Permanecem sem comprovação independente a procedência
+> biológica das imagens e a validade dos rótulos. As observações abaixo sobre
+> materiais ausentes descrevem o estado da época; os registros foram preservados.
+
 Diagnóstico registrado em 27 de outubro de 2026, antes da reestruturação
 didática. Os achados abaixo descrevem os arquivos efetivamente encontrados; não
 pressupõem materiais externos nem execuções que não estejam documentadas.

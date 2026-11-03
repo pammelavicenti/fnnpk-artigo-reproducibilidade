@@ -20,6 +20,22 @@ agronômico, causa do sintoma nem recomendação de adubação.
 
 ## Arquitetura implementada
 
+Há **um único agente principal do projeto**, implementado em Python:
+[`agente_visao.py`](../FNNPK_preparacao/agente_visao_v1/agente_visao.py).
+Ele integra percepção visual pelo modelo Keras, memória persistente em SQLite,
+decisão informacional e publicação opcional no Redis. Consulte o
+[guia do agente Python](../FNNPK_preparacao/agente_visao_v1/LEIA_ME.md).
+A continuidade do desenvolvimento e a integração com a hidroponia devem usar
+esse agente Python; a implementação atual não aciona bombas ou dosadores.
+
+A [implementação de referência JavaScript](../suplemento_monte_carlo/agente_referencia/agente.js)
+é material de verificação das regras da simulação. Recebe previsões prontas,
+não executa a rede neural e não conecta a um servidor Redis. Consulte o
+[guia do suplemento](../suplemento_monte_carlo/LEIA-ME.md).
+Essas implementações **não são dois agentes operacionais trabalhando juntos**.
+Os testes publicados comparam a política da simulação com a referência JavaScript;
+a comparação direta com o agente Python ainda não foi realizada neste trabalho.
+
 ```mermaid
 flowchart LR
     A[Imagem] --> B[Leitura RGB e redimensionamento]
