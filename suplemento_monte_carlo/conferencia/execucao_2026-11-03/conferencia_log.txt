@@ -1,0 +1,7 @@
+Tabela 7 I : alerta:0 alerta:0 alerta:0 alerta:1 captura
+Tabela 7 IS: alerta:0 registro registro alerta:1 captura
+Tabela 7 E : captura alerta:0 registro revisao captura
+Exato I   : { det: '99.99', epIncorreto: '13.65', atraso: '1.161' }
+Exato IS  : { det: '99.99', epIncorreto: '13.65', atraso: '1.161' }
+Exato E   : { det: '96.01', epIncorreto: '0.51', atraso: '2.389' }
+Exato E_fn: { det: '97.90', epIncorreto: '0.51', atraso: '2.335' }

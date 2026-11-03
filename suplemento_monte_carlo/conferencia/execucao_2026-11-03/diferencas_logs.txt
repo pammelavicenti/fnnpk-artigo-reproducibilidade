@@ -1,0 +1,83 @@
+resultados_originais/simulacao_log.txt: original 15960 bytes; gerado 15877 bytes.
+--- original/simulacao_log.txt
++++ gerado/simulacao_log.txt
+@@ -1,8 +1,8 @@
+-ok S0_base 3.0s
+-ok S1_plugin 5.8s
+-ok S2_rho0.5 8.7s
+-ok S3_rho0.8 11.5s
+-ok S4_inv0.1 15.2s
+-ok S5_d24_W24 18.2s
+-ok S6_d24_W48 21.2s
+-ok S7_L3 23.6s
++ok S0_base 7.5s
++ok S1_plugin 15.3s
++ok S2_rho0.5 23.9s
++ok S3_rho0.8 32.5s
++ok S4_inv0.1 42.1s
++ok S5_d24_W24 49.8s
++ok S6_d24_W48 56.2s
++ok S7_L3 61.3s
+resultados_originais/sensibilidade_prior_log.txt: original 8378 bytes; gerado 4167 bytes.
+--- original/sensibilidade_prior_log.txt
++++ gerado/sensibilidade_prior_log.txt
+@@ -1,2 +1,2 @@
+-ok prior_alpha_0.1 2.9s
+-ok prior_alpha_1 6.3s
++ok prior_alpha_0.1 7.2s
++ok prior_alpha_1 13.8s
+resultados_originais/analise_pareada_log.txt: original 2738 bytes; gerado 2683 bytes.
+resultados_originais/analise_variacao_intervalo_log.txt: original 382 bytes; gerado 375 bytes.
+agente_referencia/testes_log.txt: original 1747 bytes; gerado 1548 bytes.
+--- original/testes_log.txt
++++ gerado/testes_log.txt
+@@ -1,23 +1,21 @@
+-(node:49176) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+-(Use `node --trace-warnings ...` to show where the warning was created)
+-✔ Quadro 2: primeira suspeita pede nova captura (2.7889ms)
+-✔ Quadro 2: concordância emite alerta (0.5287ms)
+-✔ Quadro 2: alerta já emitido é registrado sem repetir (0.579ms)
+-✔ Quadro 2: divergência vai para revisão e limpa (0.4949ms)
+-✔ Quadro 2: fn sem suspeita é registrada (0.3616ms)
+-✔ Quadro 2: fn com suspeita vai para revisão e limpa (0.4605ms)
+-✔ Quadro 2: imagem inválida pede captura e limpa (0.3747ms)
+-✔ Quadro 2: empate vai para revisão e limpa (0.4185ms)
+-✔ Tabela 4: sequência de verificação funcional (1.0785ms)
+-✔ Elegibilidade: pedido idêntico retorna o resultado anterior sem avançar o estado (0.4876ms)
+-✔ Elegibilidade: mesmo identificador com outro conteúdo é rejeitado (0.5855ms)
+-✔ Elegibilidade: observação fora de ordem é ignorada (0.4681ms)
+-✔ Elegibilidade: imagem repetida é ignorada (0.3526ms)
+-✔ Expiração: depois de W a suspeita recomeça; exatamente em W ainda vale (0.894ms)
+-✔ Expiração: suspeita persistente volta a gerar alerta depois de W (0.7109ms)
+-✔ Troca de modelo reinicia o episódio (1.114ms)
+-✔ Plantas diferentes têm estados independentes (0.4055ms)
+-✔ Persistência: o estado sobrevive ao fechamento do banco (8.7674ms)
+-✔ Publicação: falha preserva a pendência e o reenvio após reabrir conclui (8.3093ms)
+-✔ Publicação: reenvio do mesmo pedido não duplica a chave (0.4566ms)
+-✔ Entradas inválidas são rejeitadas (0.346ms)
++✔ Quadro 2: primeira suspeita pede nova captura (5.4904ms)
++✔ Quadro 2: concordância emite alerta (0.8696ms)
++✔ Quadro 2: alerta já emitido é registrado sem repetir (0.9001ms)
++✔ Quadro 2: divergência vai para revisão e limpa (0.7342ms)
++✔ Quadro 2: fn sem suspeita é registrada (0.5569ms)
++✔ Quadro 2: fn com suspeita vai para revisão e limpa (0.768ms)
++✔ Quadro 2: imagem inválida pede captura e limpa (0.8865ms)
++✔ Quadro 2: empate vai para revisão e limpa (0.6511ms)
++✔ Tabela 4: sequência de verificação funcional (1.888ms)
++✔ Elegibilidade: pedido idêntico retorna o resultado anterior sem avançar o estado (0.7809ms)
++✔ Elegibilidade: mesmo identificador com outro conteúdo é rejeitado (1.0346ms)
++✔ Elegibilidade: observação fora de ordem é ignorada (1.3396ms)
++✔ Elegibilidade: imagem repetida é ignorada (1.1345ms)
++✔ Expiração: depois de W a suspeita recomeça; exatamente em W ainda vale (1.5049ms)
++✔ Expiração: suspeita persistente volta a gerar alerta depois de W (1.9554ms)
++✔ Troca de modelo reinicia o episódio (2.2616ms)
++✔ Plantas diferentes têm estados independentes (0.7742ms)
++✔ Persistência: o estado sobrevive ao fechamento do banco (23.7537ms)
++✔ Publicação: falha preserva a pendência e o reenvio após reabrir conclui (24.9376ms)
++✔ Publicação: reenvio do mesmo pedido não duplica a chave (0.9092ms)
++✔ Entradas inválidas são rejeitadas (0.5003ms)
+@@ -31 +29 @@
+-ℹ duration_ms 105.5046
++ℹ duration_ms 228.6138
+agente_referencia/equivalencia_log.txt: original 495 bytes; gerado 487 bytes.
+agente_referencia/sensibilidade_do_teste_log.txt: original 842 bytes; gerado 829 bytes.

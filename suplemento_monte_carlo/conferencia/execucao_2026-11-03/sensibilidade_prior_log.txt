@@ -1,0 +1,22 @@
+ok prior_alpha_0.1 7.2s
+ok prior_alpha_1 13.8s
+
+== prior_alpha_0.1 - Sensibilidade a priori Dirichlet simetrica alpha=0.1
+I      det% 100.0 [98.3; 100.0] | incorr/ep 0.22 [0.02; 0.71] | epIncorr% 18.0 [2.4; 43.1] | alertas/ep 4.48 [3.78; 4.87] | atraso 1.20 [1.07; 1.46] | rev/ep 0.00 [0.00; 0.00] | capt/ep 0.00 [0.00; 0.00] | fn epAlerta% 21.7 [0.0; 99.3] | fn alert/ep 0.24 [0.00; 3.12]
+IS     det% 100.0 [98.3; 100.0] | incorr/ep 0.20 [0.02; 0.57] | epIncorr% 18.0 [2.4; 43.1] | alertas/ep 1.54 [1.23; 2.00] | atraso 1.20 [1.07; 1.46] | rev/ep 0.00 [0.00; 0.00] | capt/ep 0.00 [0.00; 0.00] | fn epAlerta% 21.7 [0.0; 99.3] | fn alert/ep 0.23 [0.00; 1.72]
+E      det% 93.3 [77.4; 99.0] | incorr/ep 0.01 [0.00; 0.07] | epIncorr% 0.6 [0.0; 6.7] | alertas/ep 1.01 [0.87; 1.05] | atraso 2.40 [2.19; 2.71] | rev/ep 0.55 [0.25; 0.92] | capt/ep 1.40 [1.19; 1.66] | fn epAlerta% 0.6 [0.0; 72.1] | fn alert/ep 0.01 [0.00; 0.78]
+E_k3   det% 76.8 [52.2; 92.1] | incorr/ep 0.00 [0.00; 0.02] | epIncorr% 0.0 [0.0; 1.8] | alertas/ep 0.77 [0.52; 0.92] | atraso 3.30 [3.16; 3.52] | rev/ep 0.55 [0.25; 0.92] | capt/ep 2.40 [2.21; 2.60] | fn epAlerta% 0.0 [0.0; 37.9] | fn alert/ep 0.00 [0.00; 0.38]
+E_inv  det% 93.3 [77.4; 99.0] | incorr/ep 0.01 [0.00; 0.07] | epIncorr% 0.6 [0.0; 6.7] | alertas/ep 1.01 [0.87; 1.05] | atraso 2.40 [2.19; 2.71] | rev/ep 0.55 [0.25; 0.92] | capt/ep 1.40 [1.19; 1.66] | fn epAlerta% 0.6 [0.0; 72.1] | fn alert/ep 0.01 [0.00; 0.78]
+E_fn   det% 96.3 [81.2; 99.8] | incorr/ep 0.01 [0.00; 0.07] | epIncorr% 0.6 [0.0; 7.1] | alertas/ep 0.99 [0.89; 1.02] | atraso 2.38 [2.17; 2.71] | rev/ep 0.61 [0.26; 1.09] | capt/ep 1.15 [1.02; 1.42] | fn epAlerta% 1.7 [0.0; 87.7] | fn alert/ep 0.02 [0.00; 0.88]
+E_tol  det% 96.3 [81.2; 99.8] | incorr/ep 0.01 [0.00; 0.07] | epIncorr% 0.6 [0.0; 7.1] | alertas/ep 0.99 [0.89; 1.02] | atraso 2.38 [2.17; 2.71] | rev/ep 0.61 [0.26; 1.09] | capt/ep 1.15 [1.02; 1.42] | fn epAlerta% 1.7 [0.0; 87.7] | fn alert/ep 0.02 [0.00; 0.88]
+
+== prior_alpha_1 - Sensibilidade a priori Dirichlet simetrica alpha=1
+I      det% 99.4 [95.8; 100.0] | incorr/ep 0.82 [0.39; 1.42] | epIncorr% 55.4 [31.9; 77.8] | alertas/ep 4.28 [3.65; 4.71] | atraso 1.45 [1.23; 1.76] | rev/ep 0.00 [0.00; 0.00] | capt/ep 0.00 [0.00; 0.00] | fn epAlerta% 97.1 [57.0; 100.0] | fn alert/ep 2.55 [0.79; 4.26]
+IS     det% 99.4 [95.8; 100.0] | incorr/ep 0.73 [0.37; 1.17] | epIncorr% 55.4 [31.9; 77.8] | alertas/ep 2.22 [1.80; 2.69] | atraso 1.45 [1.23; 1.76] | rev/ep 0.00 [0.00; 0.00] | capt/ep 0.00 [0.00; 0.00] | fn epAlerta% 97.1 [57.0; 100.0] | fn alert/ep 1.98 [0.72; 3.02]
+E      det% 76.7 [55.6; 90.8] | incorr/ep 0.04 [0.01; 0.13] | epIncorr% 3.9 [0.7; 12.9] | alertas/ep 0.88 [0.69; 1.00] | atraso 2.72 [2.49; 2.95] | rev/ep 1.04 [0.71; 1.34] | capt/ep 1.76 [1.52; 1.98] | fn epAlerta% 32.2 [3.9; 75.7] | fn alert/ep 0.33 [0.04; 0.83]
+E_k3   det% 50.8 [28.1; 72.0] | incorr/ep 0.01 [0.00; 0.04] | epIncorr% 0.5 [0.0; 3.6] | alertas/ep 0.52 [0.31; 0.72] | atraso 3.54 [3.36; 3.69] | rev/ep 1.04 [0.71; 1.34] | capt/ep 2.62 [2.44; 2.77] | fn epAlerta% 6.9 [0.2; 42.9] | fn alert/ep 0.07 [0.00; 0.43]
+E_inv  det% 76.7 [55.6; 90.8] | incorr/ep 0.04 [0.01; 0.13] | epIncorr% 3.9 [0.7; 12.9] | alertas/ep 0.88 [0.69; 1.00] | atraso 2.72 [2.49; 2.95] | rev/ep 1.04 [0.71; 1.34] | capt/ep 1.76 [1.52; 1.98] | fn epAlerta% 32.2 [3.9; 75.7] | fn alert/ep 0.33 [0.04; 0.83]
+E_fn   det% 81.2 [61.1; 93.7] | incorr/ep 0.04 [0.01; 0.14] | epIncorr% 4.1 [0.7; 13.6] | alertas/ep 0.89 [0.75; 0.99] | atraso 2.72 [2.49; 2.98] | rev/ep 1.15 [0.76; 1.52] | capt/ep 1.50 [1.26; 1.78] | fn epAlerta% 44.0 [8.4; 84.2] | fn alert/ep 0.45 [0.08; 0.86]
+E_tol  det% 81.2 [61.1; 93.7] | incorr/ep 0.04 [0.01; 0.14] | epIncorr% 4.1 [0.7; 13.6] | alertas/ep 0.89 [0.75; 0.99] | atraso 2.72 [2.49; 2.98] | rev/ep 1.15 [0.76; 1.52] | capt/ep 1.50 [1.26; 1.78] | fn epAlerta% 44.0 [8.4; 84.2] | fn alert/ep 0.45 [0.08; 0.86]
+
+analitico [{"classe":"def_k","p_correta":0.8,"p_duas_primeiras_corretas":0.6400000000000001},{"classe":"def_n","p_correta":0.8888888888888888,"p_duas_primeiras_corretas":0.7901234567901234},{"classe":"def_p","p_correta":0.9,"p_duas_primeiras_corretas":0.81}]

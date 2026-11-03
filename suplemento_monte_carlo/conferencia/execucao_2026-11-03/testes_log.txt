@@ -1,0 +1,29 @@
+✔ Quadro 2: primeira suspeita pede nova captura (5.4904ms)
+✔ Quadro 2: concordância emite alerta (0.8696ms)
+✔ Quadro 2: alerta já emitido é registrado sem repetir (0.9001ms)
+✔ Quadro 2: divergência vai para revisão e limpa (0.7342ms)
+✔ Quadro 2: fn sem suspeita é registrada (0.5569ms)
+✔ Quadro 2: fn com suspeita vai para revisão e limpa (0.768ms)
+✔ Quadro 2: imagem inválida pede captura e limpa (0.8865ms)
+✔ Quadro 2: empate vai para revisão e limpa (0.6511ms)
+✔ Tabela 4: sequência de verificação funcional (1.888ms)
+✔ Elegibilidade: pedido idêntico retorna o resultado anterior sem avançar o estado (0.7809ms)
+✔ Elegibilidade: mesmo identificador com outro conteúdo é rejeitado (1.0346ms)
+✔ Elegibilidade: observação fora de ordem é ignorada (1.3396ms)
+✔ Elegibilidade: imagem repetida é ignorada (1.1345ms)
+✔ Expiração: depois de W a suspeita recomeça; exatamente em W ainda vale (1.5049ms)
+✔ Expiração: suspeita persistente volta a gerar alerta depois de W (1.9554ms)
+✔ Troca de modelo reinicia o episódio (2.2616ms)
+✔ Plantas diferentes têm estados independentes (0.7742ms)
+✔ Persistência: o estado sobrevive ao fechamento do banco (23.7537ms)
+✔ Publicação: falha preserva a pendência e o reenvio após reabrir conclui (24.9376ms)
+✔ Publicação: reenvio do mesmo pedido não duplica a chave (0.9092ms)
+✔ Entradas inválidas são rejeitadas (0.5003ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 228.6138

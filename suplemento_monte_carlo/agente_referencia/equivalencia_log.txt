@@ -1,0 +1,5 @@
+﻿Todas as sequências, L=5, a cada 6 h, W=24 h: 3125 sequências, 15625 passos, 0 divergências
+Todas as sequências, L=5, a cada 24 h, W=24 h: 3125 sequências, 15625 passos, 0 divergências
+Todas as sequências, L=5, a cada 24 h, W=48 h: 3125 sequências, 15625 passos, 0 divergências
+Aleatórias, L=2 a 20, intervalos de 1 a 40 h, W=24 h: 10000 sequências, 109755 passos, 0 divergências
+Matriz pontual pelo agente: { alerta_correto_pct: 96.01, episodio_alerta_incorreto_pct: 0.51 }

@@ -1,0 +1,42 @@
+{
+  "grupos": [
+    {
+      "nome": "Todas as sequências, L=5, a cada 6 h, W=24 h",
+      "W": 24,
+      "sequencias": 3125,
+      "passos": 15625,
+      "divergencias": 0,
+      "exemplo": null
+    },
+    {
+      "nome": "Todas as sequências, L=5, a cada 24 h, W=24 h",
+      "W": 24,
+      "sequencias": 3125,
+      "passos": 15625,
+      "divergencias": 0,
+      "exemplo": null
+    },
+    {
+      "nome": "Todas as sequências, L=5, a cada 24 h, W=48 h",
+      "W": 48,
+      "sequencias": 3125,
+      "passos": 15625,
+      "divergencias": 0,
+      "exemplo": null
+    },
+    {
+      "nome": "Aleatórias, L=2 a 20, intervalos de 1 a 40 h, W=24 h",
+      "W": 24,
+      "sequencias": 10000,
+      "passos": 109755,
+      "divergencias": 0,
+      "exemplo": null
+    }
+  ],
+  "exato": {
+    "alerta_correto_pct": 96.01,
+    "episodio_alerta_incorreto_pct": 0.51
+  },
+  "node": "v24.14.1",
+  "gerado_em": "2026-11-02T10:58:02.673Z"
+}
