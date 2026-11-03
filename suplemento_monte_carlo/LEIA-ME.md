@@ -2,6 +2,26 @@
 
 Material suplementar fornecido pelo orientador para reproduzir a simulação de Monte Carlo, as análises de sensibilidade e a implementação de referência das regras. O artigo em Word/PDF e o ZIP não são distribuídos nesta pasta. Scripts, comentários, atribuições e resultados recebidos foram preservados; este guia foi revisado para publicação.
 
+## Papel da referência JavaScript
+
+O projeto tem um único agente principal: o
+[agente Python](../FNNPK_preparacao/agente_visao_v1/agente_visao.py), descrito em seu
+[guia](../FNNPK_preparacao/agente_visao_v1/LEIA_ME.md). Ele integra percepção visual,
+memória persistente em SQLite, decisão informacional e publicação opcional no Redis.
+A continuidade do desenvolvimento e a integração com a hidroponia devem usar o Python.
+
+A [referência JavaScript](agente_referencia/agente.js) é material de verificação:
+recebe previsões prontas, não executa a rede neural e não conecta a um servidor Redis.
+Ela não constitui um segundo agente operacional trabalhando junto com o Python.
+Deve ser preservada porque sustenta as verificações relatadas no artigo.
+
+Os testes de equivalência publicados em [equivalencia.js](agente_referencia/equivalencia.js)
+comparam a política `policyE` da simulação com a referência JavaScript nos cenários
+cobertos. Não demonstram automaticamente equivalência completa com o agente Python.
+Uma comparação direta entre a simulação e o Python é uma possibilidade futura,
+ainda não realizada neste trabalho. Testes funcionais e repetibilidade computacional
+não constituem validação agronômica.
+
 ## Antes de começar
 
 Instale o [Node.js 24](https://nodejs.org). Não há outras dependências. O aviso `ExperimentalWarning` sobre SQLite pode ser ignorado.
@@ -120,7 +140,7 @@ O relatório da execução desta publicação está em [conferencia/VERIFICACAO.
 
 ## Imagens, fonte e direitos
 
-As quatro imagens documentais incluídas são recorte e folhas de inspeção da base **Baronn — Lettuce NPK Dataset**. Fonte: https://www.kaggle.com/datasets/baronn/lettuce-npk-dataset . A plataforma indica **CC0: Public Domain** (consulta aos metadados públicos em 03/11/2026). Isso não comprova a procedência biológica ou sintética de cada imagem.
+As quatro imagens documentais incluídas são recorte e folhas de inspeção da base **Baronn — Lettuce NPK Dataset**. Fonte: https://www.kaggle.com/datasets/baronn/lettuce-npk-dataset . A plataforma indica **CC0: Public Domain** (consulta aos metadados públicos em 03/11/2026). Essa é a fonte de download e a licença declarada pela plataforma; a procedência biológica das imagens e a validade dos rótulos continuam sem comprovação independente. A presença de marcas coloridas não comprova isoladamente origem sintética.
 
 Os scripts `marca.ps1` e `folhas.ps1` recebem caminhos por parâmetros e exigem uma cópia da base completa e `System.Drawing` no Windows. Não são necessários para as simulações. As imagens anexadas e `marca.csv` foram preservados; o dataset completo não foi acrescentado ao repositório.
 
@@ -130,4 +150,4 @@ Não se atribui uma nova licença ao material fornecido nem se presume que a lic
 
 Os scripts preservam a numeração de figuras e tabelas usada durante a preparação: “Figura 3” corresponde à Figura 5 da versão 6, e “Tabela 7” na conferência corresponde à Tabela 4. O artigo não foi alterado nem houve novo treinamento.
 
-O README principal e os documentos históricos descrevem o estado anterior à inclusão deste suplemento; as evidências específicas de Monte Carlo estão nesta pasta. A matriz de confusão provém de avaliação exploratória de 31 imagens e não se torna uma avaliação independente com estas simulações.
+O README principal e os guias atuais incorporam a publicação deste suplemento. Os relatórios históricos descrevem o estado anterior à sua inclusão e devem ser lidos com as notas contextuais; as evidências específicas de Monte Carlo estão nesta pasta. A matriz de confusão provém de avaliação exploratória de 31 imagens e não se torna uma avaliação independente com estas simulações.
