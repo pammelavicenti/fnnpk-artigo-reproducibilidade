@@ -1,0 +1,65 @@
+[
+  {
+    "comando": "node simulacao_politicas.js",
+    "pasta": "scripts",
+    "codigo": 0,
+    "segundos": 61.414,
+    "log": "simulacao_log.txt"
+  },
+  {
+    "comando": "node simulacao_sensibilidade_prior.js",
+    "pasta": "scripts",
+    "codigo": 0,
+    "segundos": 13.878,
+    "log": "sensibilidade_prior_log.txt"
+  },
+  {
+    "comando": "node analise_pareada.js",
+    "pasta": "scripts",
+    "codigo": 0,
+    "segundos": 10.501,
+    "log": "analise_pareada_log.txt"
+  },
+  {
+    "comando": "node analise_variacao_intervalo.js",
+    "pasta": "scripts",
+    "codigo": 0,
+    "segundos": 4.147,
+    "log": "analise_variacao_intervalo_log.txt"
+  },
+  {
+    "comando": "node intervalos_confianca.js",
+    "pasta": "scripts",
+    "codigo": 0,
+    "segundos": 0.151,
+    "log": "intervalos_confianca_log.txt"
+  },
+  {
+    "comando": "node --test testes.test.js",
+    "pasta": "agente_referencia",
+    "codigo": 0,
+    "segundos": 0.311,
+    "log": "testes_log.txt"
+  },
+  {
+    "comando": "node equivalencia.js ../scripts/simulacao_politicas.js",
+    "pasta": "agente_referencia",
+    "codigo": 0,
+    "segundos": 736.802,
+    "log": "equivalencia_log.txt"
+  },
+  {
+    "comando": "node sensibilidade_do_teste.js ../scripts/simulacao_politicas.js",
+    "pasta": "agente_referencia",
+    "codigo": 0,
+    "segundos": 113.31,
+    "log": "sensibilidade_do_teste_log.txt"
+  },
+  {
+    "comando": "node verificar.js",
+    "pasta": "conferencia",
+    "codigo": 0,
+    "segundos": 0.116,
+    "log": "conferencia_log.txt"
+  }
+]

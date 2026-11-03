@@ -1,0 +1,4 @@
+exatamente 24 h, W=24 h: alerta correto 85.7 [67.3; 96.1] | sem acionamento 0.1 [0.0; 1.3]
+um minuto a mais em cada foto, W=24 h: alerta correto 0.0 [0.0; 0.0] | sem acionamento 100.0 [100.0; 100.0]
+24 h ± 1 h, W=24 h: alerta correto 68.3 [49.6; 82.4] | sem acionamento 10.1 [7.2; 16.8]
+24 h ± 1 h, W=48 h: alerta correto 86.1 [68.0; 96.4] | sem acionamento 0.1 [0.0; 1.2]

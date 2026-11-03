@@ -1,0 +1,52 @@
+
+== S0_base
+Alerta correto IS/E: 99.8 [97.6; 100.0] | 86.0 [68.1; 96.1]
+Alerta incorreto IS/E: 38.6 [14.4; 67.5] | 2.1 [0.1; 10.4]
+Diferença pareada incorreto (IS-E): 35.9 [14.3; 60.0] | detecção (IS-E): 13.8 [3.9; 30.6]
+Atraso pareado E-IS (passos): 1.35 [1.22; 1.47]
+Acionamentos por sequência IS/E: 1.91 [1.49; 2.47] | 1.76 [1.50; 2.01]
+Sem nenhum acionamento em E (%): 0.1 [0.0; 1.3]
+Sem alerta correto, mas com revisão em E (%): 99.3 [93.8; 100.0]
+Dois ou mais alertas corretos em E (%): 6.8 [4.5; 8.5]
+
+== S1_plugin
+Alerta correto IS/E: 100.0 [99.9; 100.0] | 96.0 [95.3; 96.7]
+Alerta incorreto IS/E: 13.7 [12.6; 14.7] | 0.5 [0.3; 0.8]
+Diferença pareada incorreto (IS-E): 13.2 [12.1; 14.2] | detecção (IS-E): 4.0 [3.3; 4.7]
+Atraso pareado E-IS (passos): 1.25 [1.22; 1.27]
+Acionamentos por sequência IS/E: 1.48 [1.46; 1.51] | 1.54 [1.52; 1.57]
+Sem nenhum acionamento em E (%): 0.0 [0.0; 0.1]
+Sem alerta correto, mas com revisão em E (%): 100.0 [98.3; 100.0]
+Dois ou mais alertas corretos em E (%): 7.2 [6.3; 8.1]
+
+== S3_rho0.8
+Alerta correto IS/E: 87.1 [75.7; 94.2] | 80.5 [66.5; 90.8]
+Alerta incorreto IS/E: 17.4 [6.2; 35.2] | 11.5 [3.9; 25.3]
+Diferença pareada incorreto (IS-E): 5.8 [2.2; 10.3] | detecção (IS-E): 6.5 [3.5; 9.9]
+Atraso pareado E-IS (passos): 1.05 [1.03; 1.09]
+Acionamentos por sequência IS/E: 1.08 [0.96; 1.22] | 1.13 [1.02; 1.26]
+Sem nenhum acionamento em E (%): 7.1 [2.1; 16.0]
+Sem alerta correto, mas com revisão em E (%): 32.8 [22.8; 41.6]
+Dois ou mais alertas corretos em E (%): 0.4 [0.2; 0.7]
+
+== S5_d24_W24
+Alerta correto IS/E: 99.8 [97.4; 100.0] | 85.7 [67.5; 96.8]
+Alerta incorreto IS/E: 39.3 [14.8; 65.2] | 2.8 [0.2; 11.7]
+Diferença pareada incorreto (IS-E): 35.8 [14.3; 58.3] | detecção (IS-E): 14.0 [3.1; 30.3]
+Atraso pareado E-IS (passos): 1.35 [1.21; 1.46]
+Acionamentos por sequência IS/E: 2.91 [2.59; 3.20] | 1.95 [1.82; 1.99]
+Sem nenhum acionamento em E (%): 0.1 [0.0; 1.0]
+Sem alerta correto, mas com revisão em E (%): 98.3 [92.7; 100.0]
+Dois ou mais alertas corretos em E (%): 44.8 [23.3; 70.3]
+
+== S7_L3
+Alerta correto IS/E: 98.0 [92.3; 99.8] | 66.1 [47.4; 83.2]
+Alerta incorreto IS/E: 27.1 [9.3; 51.6] | 1.4 [0.1; 5.9]
+Diferença pareada incorreto (IS-E): 25.6 [9.3; 46.1] | detecção (IS-E): 31.6 [16.4; 46.2]
+Atraso pareado E-IS (passos): 1.00 [1.00; 1.00]
+Acionamentos por sequência IS/E: 1.39 [1.19; 1.67] | 1.11 [1.04; 1.16]
+Sem nenhum acionamento em E (%): 1.7 [0.2; 8.0]
+Sem alerta correto, mas com revisão em E (%): 92.9 [80.2; 98.1]
+Dois ou mais alertas corretos em E (%): 0.0 [0.0; 0.0]
+
+Deficiência persistente, alertas de E: {"a cada 6 h, 20 fotos":4,"a cada 12 h, 14 fotos":5,"a cada 24 h, 14 fotos":7}

@@ -1,0 +1,10 @@
+Intervalo de 6 h | sem alteração: 0 de 3125 sequências divergentes
+Intervalo de 6 h | fn não limpa a suspeita: 672 de 3125 sequências divergentes
+Intervalo de 6 h | imagem inválida não limpa a suspeita: 780 de 3125 sequências divergentes
+Intervalo de 6 h | exige três concordâncias: 933 de 3125 sequências divergentes
+Intervalo de 6 h | janela de 48 h em vez de 24 h: 0 de 3125 sequências divergentes
+Intervalo de 24 h | sem alteração: 0 de 3125 sequências divergentes
+Intervalo de 24 h | fn não limpa a suspeita: 0 de 3125 sequências divergentes
+Intervalo de 24 h | imagem inválida não limpa a suspeita: 0 de 3125 sequências divergentes
+Intervalo de 24 h | exige três concordâncias: 933 de 3125 sequências divergentes
+Intervalo de 24 h | janela de 48 h em vez de 24 h: 612 de 3125 sequências divergentes

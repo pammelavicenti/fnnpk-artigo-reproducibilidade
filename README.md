@@ -216,3 +216,8 @@ direitos sobre dataset, imagens, pesos ImageNet, modelos ou materiais de terceir
 Os metadados de citação estão em [CITATION.cff](CITATION.cff). Enquanto não houver
 DOI arquivado, cite a versão/tag do repositório e a autora Pammela Vicenti. Não há
 DOI fictício neste projeto.
+
+## Suplemento de Monte Carlo
+
+Simulações, análises de sensibilidade e verificações das regras estão no
+[material suplementar e guia de reprodução](suplemento_monte_carlo/LEIA-ME.md).

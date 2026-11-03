@@ -1,0 +1,9 @@
+# Excecoes restritas para as quatro imagens documentais do pacote.
+!verificacao_base_kaggle/canto_fn1.png
+!verificacao_base_kaggle/def_com_marca.png
+!verificacao_base_kaggle/fn.png
+!verificacao_base_kaggle/sem_marca.png
+# Saidas de reexecucao devem ficar em uma copia temporaria.
+scripts/*_resultados.json
+scripts/*_resumo.csv
+scripts/intervalos_confianca.json
